@@ -22,3 +22,72 @@
     </div>
     <div id="preloader-snow"></div>
   </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" style="display:none;">
+    <video autoplay muted loop id="bgVideo">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div class="top-bar"></div>
+    <div class="main-content tilt" id="main-tilt">
+      <div class="profile-banner-inside">
+        <img src="assets/banner.gif" alt="Banner" class="banner-img" />
+      </div>
+      <div class="profile-avatar-wrapper">
+        <img src="logo.gif" alt="Logo" class="logo-gif" />
+      </div>
+      <div class="info-side info-centered">
+        <h1 id="username">
+          <span id="username-text" class="glass-animated">Leahhh</span>
+        </h1>
+        <div class="location location-centered">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="location-text glass-animated">Netherlands</span>
+        </div>
+        <div class="by by-centered" id="byline"></div>
+        <div class="tagline-container tagline-centered">
+          <span id="tagline"></span><span class="blinking-cursor" id="tag-cursor">|</span>
+        </div>
+        <div class="tagline2-container tagline2-centered">
+          <span id="tagline2"></span><span class="blinking-cursor" id="tag2-cursor">|</span>
+        </div>
+        <div class="link-grid link-grid-centered"></div>
+        <audio id="audio-player" style="display:none;" autoplay></audio>
+      </div>
+      <div class="custom-music-card" id="music-card">
+        <div class="music-cover">
+          <img src="" alt="Portada canción" id="music-cover-img" />
+        </div>
+        <div class="music-info">
+          <div class="music-title" id="music-title"></div>
+          <div class="music-artist" id="music-artist"></div>
+          <div class="music-progress-bar">
+            <span id="music-current">0:00</span>
+            <input type="range" id="music-progress" min="0" max="100" value="0" step="1" />
+            <span id="music-duration">0:00</span>
+          </div>
+          <div class="music-controls">
+            <button id="music-prev" aria-label="Anterior">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"/><rect x="5" y="4" width="4" height="16" rx="1"/></svg>
+            </button>
+            <button id="music-play" aria-label="Play/Pause">
+              <svg id="music-play-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+            <button id="music-next" aria-label="Siguiente">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><rect x="15" y="4" width="4" height="16" rx="1"/></svg>
+            </button>
+          </div>
+          <audio id="music-audio"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-phrase">
+      <span>"Results speak louder than intentions; success is not declared, it's proven, because true power lies in what you do, not what you say." – 건초어 & Unknown</span>
+    </div>
+    <div id="main-snow"></div>
+  </div>
+  <div id="cursor"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
