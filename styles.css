@@ -1,0 +1,111 @@
+/* Reset y configuración base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    background: var(--main-black);
+    color: var(--main-white);
+    overflow: hidden;
+    min-height: 100vh;
+    cursor: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+  
+  /* Video de fondo */
+  #bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(0.6) blur(1px);
+  }
+  
+  /* Preloader */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30, 0, 40, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer !important;
+  }
+  
+  .preloader-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+  }
+  
+  .typing-text {
+    font-family: 'VT323', monospace;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+  }
+  
+  .blinking-cursor {
+    display: inline-block;
+    width: 1ch;
+    animation: blink 1s steps(1) infinite;
+    color: var(--main-purple);
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 2px;
+  }
+  
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+  
+  /* Contenido principal */
+  .main-content {
+    margin: 15vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 75vw;
+    min-width: 340px;
+    max-width: 800px;
+    min-height: 600px;
+    background: rgba(30, 0, 40, 0.46);
+    border-radius: 24px;
+    box-shadow: 0 0 28px 8px rgba(162, 89, 247, 0.18);
+    backdrop-filter: blur(4px);
+    transition: box-shadow 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    position: relative;
+    animation: fadeInUp 1.2s cubic-bezier(.4,1.4,.7,1) 0.2s both;
+  }
+  
+  .profile-avatar-wrapper {
+    width: 160px;
+    height: 160px;
+    margin: -80px 0 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.4s cubic-bezier(.4,1.4,.7,1) 0.5s both;
+  }
+  
