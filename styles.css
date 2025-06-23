@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding-top: 0;
+    height: auto;
   }
   
   /* Video de fondo */
@@ -95,6 +96,7 @@ body {
     padding-bottom: 32px;
     position: relative;
     animation: fadeInUp 1.2s cubic-bezier(.4,1.4,.7,1) 0.2s both;
+    height: auto;
   }
   
   .profile-avatar-wrapper {
@@ -570,7 +572,7 @@ body {
   
   .highlight-phrase {
     width: 100%;
-    margin: 40px auto 0 auto;
+    margin: 60px auto 40px auto;
     display: flex;
     align-items: center;
     justify-content: center;
