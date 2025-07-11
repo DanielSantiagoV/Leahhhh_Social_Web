@@ -511,7 +511,7 @@ const config = {
       title: "Ginseng Strip",
       artist: "Yung Lean - Crafted with ❤️ by @daaaaaniel",
       album: "Crafted with ❤️ by @daaaaaniel",
-      albumArtUrl: "https://media.discordapp.net/attachments/1199096079707295836/1386537697023099010/WhatsApp_Image_2025-06-23_at_04.39.58.jpeg?ex=685aba1b&is=6859689b&hm=a6a881598a9a71264923cc3c5523a24a0b9f32de53a463e5a3ebcf0ec26c292c&=&format=webp",
+      albumArtUrl: "mylove.webp",
       audioSrc: "assets/music/Ginseng Strip.mp3"
     }
   ];
